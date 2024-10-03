@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub: Nearby Cafés</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+             <div id="logo">
+                <img src="images/newlogo.jpg" alt="FoodHub Logo">
+             </div>
+            <h1>FoodHub: Nearby Cafés</h1>
+            <ul>
+                <li><a href="#cafes">Cafés</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cafes" class="cafes">
+            <h2>Available Cafés Near You</h2>
+
+            <div class="cafe">
+                <h3>Café Delight</h3>
+                <p>Location: 123 Café Lane, Coffee Town</p>
+                <p>Phone: (123) 456-7890</p>
+                <button onclick="toggleMenu('menu1')">View Menu</button>
+                <div id="menu1" class="menu">
+                    <ul>
+                        <li>Espresso - $3</li>
+                        <li>Cappuccino - $4</li>
+                        <li>Cheese Croissant - $2</li>
+                        <li>Chocolate Muffin - $3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cafe">
+                <h3>Coffee Corner</h3>
+                <p>Location: 456 Bean Street, Java City</p>
+                <p>Phone: (234) 567-8901</p>
+                <button onclick="toggleMenu('menu2')">View Menu</button>
+                <div id="menu2" class="menu">
+                    <ul>
+                        <li>Americano - $3</li>
+                        <li>Latte - $4</li>
+                        <li>Bagel with Cream Cheese - $2.5</li>
+                        <li>Blueberry Muffin - $3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cafe">
+                <h3>Brew & Chew</h3>
+                <p>Location: 789 Roast Avenue, Espresso Town</p>
+                <p>Phone: (345) 678-9012</p>
+                <button onclick="toggleMenu('menu3')">View Menu</button>
+                <div id="menu3" class="menu">
+                    <ul>
+                        <li>Flat White - $4</li>
+                        <li>Mocha - $4.5</li>
+                        <li>Almond Croissant - $3</li>
+                        <li>Lemon Cake - $3.5</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to our customer service at <a href="mailto:info@foodhub.com">info@foodhub.com</a> or call (123) 987-6543.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodHub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
